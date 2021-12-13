@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://cdn.jim-nielsen.com/ios/512/lyft-2016-02-02.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Become a driver or Get a ride now - lyft</title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="container">
+          <div class="navigation">
+            <div class="logo">
+              <a href="#" class="logo-img">
+                <svg
+                  fill="currentColor"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 72 50"
+                  aria-labelledby="lyft-logo"
+                  height="40px"
+                >
+                  <g>
+                    <title id="lyft-logo">Lyft Logo</title>
+                    <path
+                      d="M.023.888h10.912v28.716c0 4.544 2.12 7.251 3.796 8.411-1.775 1.547-7.198 2.901-11.24-.386C1.106 35.69.022 32.504.022 29.507V.888z"
+                    ></path>
+                    <path
+                      d="M68.218 24.742v-3.018h3.328V11.137H67.89C66.488 4.781 60.717.018 53.815.018c-7.95 0-14.396 6.32-14.396 14.116v24.724c2.265.312 4.964-.04 7.26-1.906 2.384-1.938 3.467-5.124 3.467-8.122v-.91h5.45V17.333h-5.45v-3.199h.013c0-1.98 1.637-3.585 3.656-3.585 2.02 0 3.662 1.605 3.662 3.585v10.608c0 7.796 6.453 14.116 14.403 14.116V28.326c-2.019 0-3.662-1.605-3.662-3.584"
+                    ></path>
+                    <path
+                      d="M26.89 11.137v15.537c0 .883-.746 1.597-1.667 1.597-.92 0-1.667-.714-1.667-1.597V11.137H12.759V29.41c0 3.288 1.137 7.445 6.31 8.799 5.18 1.355 8.185-1.45 8.185-1.45-.274 1.848-2.049 3.201-4.909 3.491-2.164.22-4.93-.483-6.31-1.063v9.681c3.517 1.017 7.236 1.345 10.877.653 6.606-1.257 10.775-6.671 10.775-13.874v-24.51H26.891z"
+                    ></path>
+                  </g>
+                </svg>
+              </a>
+            </div>
+            <div class="nav-input">
+              <div class="searchbar">
+                <span class="searchiconspan"><i class="fa fa-search"></i></span>
+                <span class="dotinsearch"
+                  ><svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    style="fill: #de00a6"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path
+                      d="M8 15c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7zM8 4.99A3.015 3.015 0 0 0 4.99 8 3.015 3.015 0 0 0 8 11.01 3.015 3.015 0 0 0 11.01 8 3.015 3.015 0 0 0 8 4.99z"
+                    ></path></svg
+                ></span>
+                <span class="input-place"
+                  ><input placeholder="Where are you going?"
+                /></span>
+
+                <span class="searchicon-dark"
+                  ><i class="fa fa-search"></i
+                ></span>
+              </div>
+              <input type="checkbox" id="nav__checkbox" class="nav__checkbox" />
+              <span class="ham"
+                ><svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  style="
+                    fill: var(
+                      --core-ui-theme-icon-primary,
+                      rgba(12, 11, 49, 1)
+                    );
+                  "
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    d="M29 7.75H3v1.989h26V7.75zm0 7.26H3V17h26v-1.99zm0 7.238H3v1.989h26v-1.99z"
+                  ></path></svg
+              ></span>
+              <div class="nav-links">
+                <span>
+                  <h5>Driver</h5>
+                </span>
+              </div>
+              <div class="nav-links">
+                <span>
+                  <h5>Rider</h5>
+                </span>
+              </div>
+              <div class="nav-links">
+                <span>
+                  <h5>Business</h5>
+                </span>
+              </div>
+              <div class="nav-links">
+                <span>
+                  <h5>Log in</h5>
+                </span>
+              </div>
+              <div class="nav-links">
+                <span>
+                  <h5>Sign Up</h5>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="mobile__nav">
+      <div class="container">
+        <div class="navigation_mob">
+          <div class="logo">
+            <a href="#" class="logo-img">
+              <svg
+                fill="currentColor"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 72 50"
+                aria-labelledby="lyft-logo"
+                height="40px"
+              >
+                <g>
+                  <title id="lyft-logo">Lyft Logo</title>
+                  <path
+                    d="M.023.888h10.912v28.716c0 4.544 2.12 7.251 3.796 8.411-1.775 1.547-7.198 2.901-11.24-.386C1.106 35.69.022 32.504.022 29.507V.888z"
+                  ></path>
+                  <path
+                    d="M68.218 24.742v-3.018h3.328V11.137H67.89C66.488 4.781 60.717.018 53.815.018c-7.95 0-14.396 6.32-14.396 14.116v24.724c2.265.312 4.964-.04 7.26-1.906 2.384-1.938 3.467-5.124 3.467-8.122v-.91h5.45V17.333h-5.45v-3.199h.013c0-1.98 1.637-3.585 3.656-3.585 2.02 0 3.662 1.605 3.662 3.585v10.608c0 7.796 6.453 14.116 14.403 14.116V28.326c-2.019 0-3.662-1.605-3.662-3.584"
+                  ></path>
+                  <path
+                    d="M26.89 11.137v15.537c0 .883-.746 1.597-1.667 1.597-.92 0-1.667-.714-1.667-1.597V11.137H12.759V29.41c0 3.288 1.137 7.445 6.31 8.799 5.18 1.355 8.185-1.45 8.185-1.45-.274 1.848-2.049 3.201-4.909 3.491-2.164.22-4.93-.483-6.31-1.063v9.681c3.517 1.017 7.236 1.345 10.877.653 6.606-1.257 10.775-6.671 10.775-13.874v-24.51H26.891z"
+                  ></path>
+                </g>
+              </svg>
+            </a>
+          </div>
+          <div class="nav-input">
+            <span class="login-btn"> Login </span>
+
+            <label label for="nav__checkbox" class="nav__toggle">
+              <i class="fas fa-times"></i>
+            </label>
+          </div>
+        </div>
+        <div class="mobile__nav__elem">
+          <ul class="driver">
+            <h5>Driver</h5>
+            <li>Earnings</li>
+            <li>Cities</li>
+            <li>Apply to drive</li>
+            <li>Help</li>
+          </ul>
+          <ul class="rider">
+            <h5>Rider</h5>
+            <li>Cities</li>
+            <li>For Business</li>
+            <li>Signup to ride</li>
+            <li>Help</li>
+          </ul>
+          <h5 class="business">Business</h5>
+          <h5 class="Login">Login</h5>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="hero">
+        <div class="container">
+          <div class="hero__content">
+           
+            <h1 class="hero-title">
+              Let's roll
+            </h1>
+            <span class="hero-btns">
+              <span class="apply-btn"><a href="#">Sign up to ride</a></span>
+              <span class="signup-btn"><a href="#">Apply to drive</a></span>
+            </span>
+          </div>
+          <div class="hero-image">
+            <div class="img-1">
+              <img src="./image/img1.jpg" alt="" />
+            </div>
+           
+          </div>
+        </div>
+      </div>
+      <section class="earn">
+        <div class="container">
+          <div class="earn-left">
+            <h5 class="earn-subtitle">DRIVE WITH LYFT</h5>
+            <h3 class="earn-title">
+              Set your own hours.
+              Earn on your own terms.
+            </h3>
+            
+            <ul class="earn-list">
+              <li>
+                Reliable earnings:
+                <p>
+                  Make money, keep your tips, and cash out when you want.
+                </p>
+              </li>
+              <li>
+                A flexible schedule:
+                <p>Be your own boss and drive whenever it works for you.</p>
+              </li>
+              <li>
+                Get paid promptly:
+                <p>
+                  Cash out your earnings whenever you want.
+                </p>
+              </li>
+            </ul>
+            <span class="earn-btns">
+              <span class="apply-btn"><a href="#">Apply to drive</a></span>
+              <span class="how-btn"
+                ><a href="#">How driver pay work &rarr;</a></span
+              >
+            </span>
+          </div>
+          <div class="earn-right">
+            <div class="earnimage">
+              <img src="./image/img2.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="feedback">
+        <div class="container">
+          <div class="feed-row1">
+            <div class="feed-1">
+              <img
+                src="https://randomuser.me/api/portraits/men/41.jpg"
+                alt=""
+                class="avatar"
+              />
+              <p class="feed-text">
+                “As a student, it’s hard to complete my class work around a
+                schedule. I started driving more with Lyft and realized it was
+                the perfect opportunity to make money and work on my own time!
+                Driving with Lyft gives me freedom in my schedule to focus on
+                school, which is my main priority.”
+              </p>
+              <p class="feed-auth">— Harold</p>
+              <p class="feed-foot">Driving with Lyft since 2020</p>
+            </div>
+            <div class="feed-2">
+              <img
+                src="https://randomuser.me/api/portraits/men/41.jpg"
+                alt=""
+                class="avatar"
+              />
+              <p class="feed-text">
+                “As a student, it’s hard to complete my class work around a
+                schedule. I started driving more with Lyft and realized it was
+                the perfect opportunity to make money and work on my own time!
+                Driving with Lyft gives me freedom in my schedule to focus on
+                school, which is my main priority.”
+              </p>
+              <p class="feed-auth">— Harold</p>
+              <p class="feed-foot">Driving with Lyft since 2020</p>
+            </div>
+            <div class="feed-3">
+              <img
+                src="https://randomuser.me/api/portraits/men/41.jpg"
+                alt=""
+                class="avatar"
+              />
+              <p class="feed-text">
+                “As a student, it’s hard to complete my class work around a
+                schedule. I started driving more with Lyft and realized it was
+                the perfect opportunity to make money and work on my own time!
+                Driving with Lyft gives me freedom in my schedule to focus on
+                school, which is my main priority.”
+              </p>
+              <p class="feed-auth">— Harold</p>
+              <p class="feed-foot">Driving with Lyft since 2020</p>
+            </div>
+          </div>
+          <div class="feed-row2">
+            <div class="controller">
+              <span class="left-span">&larr;</span>
+
+              <div class="middle">
+                <span></span><span></span><span></span><span></span>
+              </div>
+
+              <span class="right-span">&rarr;</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="grid-sec">
+        <div class="container">
+          <div class="grid1">
+            <h4 class="grid1-subtitle">RIDE WITH LYFT</h4>
+          <h1 class="grid1-title">Ready, set, go<br>
+            in just a few quick taps</h1>
+            <p>No matter your destination, we’ll get you where you need to go</p>
+            <ul>
+            <li> Get a reliable ride in minutes</li>
+            <li> Know that your driver is wearing a mask</li>
+            <li> Schedule your ride in advance</li>
+          </ul>
+            <span class="apply-btn"><a href="#">Get a ride</a></span>
+          </div>
+          <div class="grid2">
+            <img src="./image/mobile.jpg" alt="" class="gridimg">
+          </div>
+          <div class="grid3"><div class="pinklogo"><img src="./image/LyftPink_Gradient5.png" alt=""></div>
+          <p><span><a href="#">Join Lyft Pink</a></span> to unlock perks like 15% off rides, free Grubhub+ membership, exclusive offers, and more. All for $19.99 a month. Available in the US only.</p>
+          </div>
+          
+      </section>
+      <div class="grid4">
+        
+        <h1 class="grid4-title">
+          Ride. Bike. Scoot. Go bananas.</h1>
+          <p>We’ve got options to get you where you’re going. Choose a ride* that suits your mood and budget.</p>
+          <div class="grid-control"><span><i class="fas fa-arrow-left"></i></span><span><i class="fas fa-arrow-right"></i></span></div>
+      </div>
+    </div>
+          <div class="grid5">
+            <div class="container">
+            <div class="cards">
+              <div class="inner">
+              <h4>Rental</h4><img src="./image/download-car-png-pic-21568182869vzykbe7nbo.png" alt="">
+              <h5><span><i class="fas fa-male"></i></span> Get a reliable ride</h5> 
+              <h5><span><i class="far fa-calendar"></i></span> Schedule</h5>
+            </div>
+            </div>
+            <div class="cards">
+              <div class="inner">
+              <h4>Bikes & Scooters</h4><img id="bike" src="./image/download-car-png-pic-21568182869vzykbe7nbo.png" alt="">
+              <h5><span><i class="fas fa-male"></i></span> Get a reliable ride</h5> 
+              <h5><span><i class="far fa-calendar"></i></span> Schedule</h5></div></div>
+            <div class="cards">
+              <div class="inner">
+              <h4>Wait & Save</h4><img src="./image/download-car-png-pic-21568182869vzykbe7nbo.png" alt="">
+              <h5><span><i class="fas fa-male"></i></span> Get a reliable ride</h5> 
+              <h5><span><i class="far fa-calendar"></i></span> Schedule</h5></div></div>
+            <div class="cards">
+              <div class="inner">
+              <h4>LYFT</h4><img src="./image/download-car-png-pic-21568182869vzykbe7nbo.png" alt="">
+              <h5><span><i class="fas fa-male"></i></span> Get a reliable ride</h5> 
+              <h5><span><i class="far fa-calendar"></i></span> Schedule</h5></div></div>
+              <div class="cards">
+                <div class="inner">
+                <h4>LYFT</h4><img src="./image/download-car-png-pic-21568182869vzykbe7nbo.png" alt="">
+                <h5><span><i class="fas fa-male"></i></span> Get a reliable ride</h5> 
+                <h5><span><i class="far fa-calendar"></i></span> Schedule</h5></div></div>
+                <div class="cards">
+                  <div class="inner">
+                  <h4>LYFT</h4><img src="./image/download-car-png-pic-21568182869vzykbe7nbo.png" alt="">
+                  <h5><span><i class="fas fa-male"></i></span> Get a reliable ride</h5> 
+                  <h5><span><i class="far fa-calendar"></i></span> Schedule</h5></div></div>
+                  <div class="cards">
+                    <div class="inner">
+                    <h4>LYFT</h4><img src="./image/download-car-png-pic-21568182869vzykbe7nbo.png" alt="">
+                    <h5><span><i class="fas fa-male"></i></span> Get a reliable ride</h5> 
+                    <h5><span><i class="far fa-calendar"></i></span> Schedule</h5></div></div>
+                    <div class="cards">
+                      <div class="inner">
+                      <h4>LYFT</h4><img src="./image/download-car-png-pic-21568182869vzykbe7nbo.png" alt="">
+                      <h5><span><i class="fas fa-male"></i></span> Get a reliable ride</h5> 
+                      <h5><span><i class="far fa-calendar"></i></span> Schedule</h5></div></div>
+                    </div>
+          </div>
+          <div class="grid6">
+            <h6>*Availability of bikes, scooters, rentals, ride types, and transit information varies by region.</h6>
+          </div>
+      
+       <section class="estimate">
+        <div class="container">
+           
+            <div class="form">
+              <h3 class="estimate-title">Ready to roll?<br><span>
+                Get a estimate.</span></h3>
+            <div class="pickup">
+              <span class="sc-18fxrom-0 JZXBP"><svg width="16" height="16" viewBox="0 0 16 16" style="fill:var(--core-ui-theme-text-interactive,rgba(82,59,228,1))" aria-hidden="true" focusable="false"><path d="M8 15c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7zM8 4.99A3.015 3.015 0 0 0 4.99 8 3.015 3.015 0 0 0 8 11.01 3.015 3.015 0 0 0 11.01 8 3.015 3.015 0 0 0 8 4.99z"></path></svg></span>
+              <span class="input-place"><input placeholder="Enter pick-up location*"></span>
+            </div>
+            <div class="drop">
+              <span class="sc-18fxrom-0 JZXBP"><svg width="16" height="16" viewBox="0 0 16 16" style="fill:#FF00BF" aria-hidden="true" focusable="false"><path d="M8 15c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7zM8 4.99A3.015 3.015 0 0 0 4.99 8 3.015 3.015 0 0 0 8 11.01 3.015 3.015 0 0 0 11.01 8 3.015 3.015 0 0 0 8 4.99z"></path></svg></span>
+                <span class="input-place"><input placeholder="Enter drop-off location*"></span>
+              </div>
+            
+            
+            <span class="estimate-btn"><a href="#">Get estimate</a></span>
+          </div>
+          </div>
+       </section>      
+
+      <section class="safety">
+        <div class="container">
+          <div class="safety-left">
+            <h5 class="safety-subtitle">SAFETY FIRST</h5>
+            <h3 class="safety-title">Your safety comes first. Always.</h3>
+            <p class="safety-text">
+              We look out for you before, during, and after every single ride.
+               And we monitor rides to help you get where you need to go. If you ever need it, we’re standing by, ready to help.
+            </p>
+
+            <span class="safety-btns">
+              <span class="apply-btn"><a href="#">Learn about safety</a></span>
+              <span class="community-btn"
+                ><a href="#">Community guidelines &rarr;</a></span
+              >
+            </span>
+          </div>
+          <div class="safety-right">
+            <div class="safetyimage">
+              <img src="./image/img3.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="vaccine">
+        <div class="container">
+          <div class="vaccine-left">
+            <h3 class="vaccine-title">Making millions of rides more accessibleine</h3>
+            <p class="vaccine-text">
+              A ride is more than just a ride. It's a gateway to opportunities and jobs. 
+              A connection to community. And access to essentials like groceries, healthcare, and polling places.
+               Our LyftUp initiative makes rides more accessible for millions, and helps bring communities even closer.
+            </p>
+
+            
+              <span class="vaccine-btn""
+                ><a href="#">Learn about our LyftUp programs &rarr;</a></span
+              >
+            
+          </div>
+          <div class="vaccine-right">
+            <div class="vaccineimage">
+              <img src="./image/img4.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="business-section">
+        <div class="container">
+          <img src="./image/pngkit_lyft-logo-png_1772417.png" alt="" class="busi-img">
+          <h1 class="bus-title">We help you move your<br>
+            <span style="color: #6d6079;">visitors</span></h1>
+            <p class="bus-text">From affordable transportation solutions to effortless expensing, we’ll help drive your business forward by<br>
+              getting your people where they need to go.</p>
+              <span class="signup-btn""
+              ><a href="#">Learn more</a></span
+            >
+        </div>
+      </section>
+     
+      <section class="clients">
+        <div class="container">
+          <div class="client-logos">
+              <div class="cli-logo-img"><img src="./image/logo (5).png" alt=""></div>
+              <div class="cli-logo-img"><img src="./image/logo (2).png" alt=""></div>
+              <div class="cli-logo-img"><img src="./image/logo (3).png" alt=""></div>
+              <div class="cli-logo-img"><img src="./image/logo (4).png" alt=""></div>
+              <div class="cli-logo-img"><img src="./image/logo (1).png" alt=""></div>
+              <div class="cli-logo-img"><img src="./image/logo (6).png" alt=""></div>
+          </div>
+          <div class="cli-control">
+            <span class="left-span">&larr;</span>
+
+            <div class="middle">
+              <span></span><span></span><span></span><span></span>
+            </div>
+
+            <span class="right-span">&rarr;</span>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <footer>
+      <div class="container topdiv">
+        <div class="accordions">
+          <div class="accordion">
+            <input type="checkbox" id="chck1">
+            <label class="acc-label" for="chck1">Driver</label>
+            <div class="acc-content">
+              <ul><li>Become a driver</li>
+              <li>Earnings</li>
+              <li>Cities</li>
+              <li>Helps</li>
+              <li>Safety</li>
+              <li>Application Requirements</li>
+              <li>Express drive</li>
+              <li>Bonus</li>
+              <li>Lyft Rewards</li>
+              <li>Driving Opportunity</li>
+              <li>Insurance</li>
+              <li>Hub</li></ul>
+            </div>
+          </div>
+          <div class="accordion">
+            <input type="checkbox" id="chck2">
+            <label class="acc-label" for="chck2">Rider</label>
+            <div class="acc-content">
+              <ul><li>Become a driver</li>
+              <li>Earnings</li>
+              <li>Cities</li>
+              <li>Helps</li>
+              <li>Safety</li>
+              
+              <li>Express drive</li>
+              <li>Bonus</li>
+              <li>Lyft Rewards</li>
+              
+              <li>Insurance</li>
+              <li>Hub</li>
+              <li>Bonus</li></ul>
+              
+            </div>
+          </div>
+          <div class="accordion">
+            <input type="checkbox" id="chck3">
+            <label class="acc-label" for="chck3">LYFT</label>
+            <div class="acc-content">
+              <ul><li>Become a driver</li>
+              <li>Earnings</li>
+              <li>Cities</li>
+              <li>Helps</li>
+              <li>Safety</li>
+            
+              <li>Express drive</li>
+              <li>Bonus</li>
+              <li>Lyft Rewards</li>
+              <li>Driving Opportunity</li>
+              <li>Insurance</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="foot-buttons">
+          <span class="foot-btn"><a href="#">Lyft Driver app</a></span>
+          <span class="foot-btn"><a href="#">Lyft Rider app</a></span>
+          <span class="foot-btn"><a href="#">Ride on Web</a></span>
+        </div>
+      </div>
+      <div class="container bottomdiv">
+        <div class="foot-icons">
+<span><i class="fab fa-twitter"></i></span>
+<span><i class="fab fa-facebook"></i></span>
+<span><i class="fab fa-instagram"></i></span>
+</div>
+<div class="foot-links">
+<span><a href="#">Terms</a></span>
+<span><a href="#">Privacy</a></span>
+<span><a href="#">Accessibility Statement</a></span>
+<span style="font-family: ProximaNova, sans-serif;
+font-weight: 400;
+font-size: 13px;
+line-height: 16px;">© 2021 Lyft, Inc.</span>
+<span style="font-family: ProximaNova, sans-serif;
+font-weight: 400;
+font-size: 13px;
+line-height: 16px;">CPUC ID No. TCP0032513-P</span>
+</div>
+      </div>
+    </footer>
+  </body>
+</html>
